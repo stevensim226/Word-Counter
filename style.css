@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.tool{
+    display:flex;
+}
+
+.output-area{
+    padding-top:20px;
+    width:50%;
+    display:flex;
+    justify-content: center;
+    background-color: orange;
+    min-height: 100vh;
+}
+
+.input-area{
+    padding-top:20px;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: green;
+}
+
+.table{
+    border-collapse: collapse;
+    width:80%;
+}
+
+tr th:nth-child(1){
+    width:40px;
+}
+
+tr:nth-child(even){
+    background-color:white;
+}
+
+tr:nth-child(odd){
+    background-color:gainsboro;
+}
+
+.middle{
+    text-align: center;
+}
+
+.table td, .table th{
+    border:1px solid black;
+    padding:3px;
+}
+
+.btn{
+    margin-top:10px;
+    height:40px;
+    width:100px;
+    border-radius: 15px;
+    background-color: orange;
+    border: 2px solid white;
+    font-size: 14px;
+    transition:0.5s;
+}
+
+.btn:hover{
+    background-color: gold;
+}
+
+.textarea{
+    border-radius: 20px;
+    padding:20px;
+    transition: 0.2s;
+}
+
+.textarea:focus{
+    box-shadow: 0 0 10px 5px gainsboro;
+}
