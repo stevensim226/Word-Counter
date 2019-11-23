@@ -70,6 +70,8 @@ tr:nth-child(odd){
 }
 
 .textarea{
+    height:70%;
+    width:90%;
     border-radius: 20px;
     padding:20px;
     transition: 0.2s;
@@ -77,4 +79,17 @@ tr:nth-child(odd){
 
 .textarea:focus{
     box-shadow: 0 0 10px 5px gainsboro;
+}
+
+@media(max-width:768px){
+    .tool{
+        flex-direction: column;
+    }
+    .output-area,.input-area{
+        width:100%;
+        min-height:500px;
+    }
+    .textarea{
+        min-height:400px;
+    }
 }
