@@ -27,6 +27,7 @@ function appendTable(){
 }
 
 // Removes punctuations from the text then separates it by spaces and then counts the occurences
+// It will also sort the words by occurrences
 function process_text(){
     var textInput = document.querySelector(".textarea").value
     textInput = textInput.replace(/["'.,\/#!$%‘’\^&\*;:<>{}=\-_`~()\n]/g," ").toLowerCase()
